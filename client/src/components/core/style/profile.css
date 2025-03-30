@@ -1,0 +1,33 @@
+.profile {
+  margin-top: 5rem;
+}
+
+.profile h1 {
+  font-size: 3rem;
+}
+
+.profile table {
+  border-collapse: collapse;
+  width: 60%;
+  margin-top: 5rem;
+}
+
+.profile table tr td{
+    padding: 2rem;
+    font-size: 1.4rem;
+}
+
+.profile table tr td:nth-child(1){
+    font-weight: bold;
+}
+
+.profile a{
+    display: inline-block;
+    margin-top: 5rem;
+}
+
+.profile a button{
+    width: 20rem;
+    height: 3.3rem;
+    cursor: pointer;
+}

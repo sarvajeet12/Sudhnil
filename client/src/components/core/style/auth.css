@@ -1,0 +1,238 @@
+/* ===================================== Login Container =============================== */
+
+.login-container,
+.signUp-container {
+  background-color: rgba(189, 189, 189, 0.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.login-container .login,
+.signUp-container .signUp {
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+  width: 30%;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4rem 2rem;
+  border-radius: 0.5rem;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
+}
+
+.login-container .login img {
+  width: 15rem;
+  height: auto;
+}
+
+.login-container .login h1 {
+  margin: 12rem 0 3rem 0;
+  font-size: 3rem;
+  color: var(--main-color);
+}
+
+.login-container .login form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 1.5rem;
+}
+
+.login-container .login form input[type="email"] {
+  width: 70%;
+  height: 3.3rem;
+  padding: 0 0.5rem;
+  text-align: center;
+}
+
+.login-container .login form button[type="submit"] {
+  width: 3.3rem;
+  height: 3.3rem;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  align-items: center;
+  border-radius: 5rem;
+  -webkit-border-radius: 5rem;
+  -moz-border-radius: 5rem;
+  -ms-border-radius: 5rem;
+  -o-border-radius: 5rem;
+}
+
+.login-container .login span {
+  display: flex;
+  align-items: center;
+  column-gap: 2rem;
+  margin: 6rem 0 2rem 0;
+}
+
+.login-container .login span::before,
+.login-container .login span::after {
+  content: "";
+  height: 0.2rem;
+  width: 10rem;
+  background-color: #000;
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  color: #000;
+  display: block;
+  margin-top: 0;
+}
+
+.login-container .login a {
+  width: 100%;
+  text-align: center;
+}
+
+.login-container .login .signUpBtn,
+.signUp-container .signUp .signUpBtn {
+  cursor: pointer;
+  height: 3.3rem;
+  width: 70%;
+  background-color: var(--main-color);
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.4rem;
+  border: none;
+  border-radius: 0.5rem;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
+}
+
+/* ===================================== Signup Container =============================== */
+.signUp-container .signUp h1 {
+  font-size: 3rem;
+  color: var(--main-color);
+}
+
+.signUp-container .signUp form {
+  margin-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 2rem;
+  width: 100%;
+}
+
+.signUp-container .signUp form input[type="text"],
+.signUp-container .signUp form input[type="email"],
+.signUp-container .signUp form input[type="number"],
+.signUp-container .signUp form select {
+  width: 80%;
+  height: 3.3rem;
+  padding: 0 0.5rem;
+}
+
+.signUp-container .signUp form span {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  width: 80%;
+  column-gap: 1rem;
+}
+
+.signUp-container .signUp form span label {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.signUp-container .signUp .signUpBtn {
+  margin-top: 4rem;
+}
+
+.signUp-container .signUp .alreadyAccount {
+  font-size: 1.3rem;
+}
+
+/* ========================================= verify otp email verification =============================== */
+.login-container .verifyOTP h1 {
+  margin: 0rem 0 5rem 0;
+  font-size: 3rem;
+  color: var(--main-color);
+}
+
+.otp-boxes {
+  display: flex;
+  height: 3.3rem;
+  min-width: 3.3rem;
+  margin: 0 1.5rem;
+  font-size: 1.5rem;
+  margin-bottom: 4rem;
+}
+
+/* --------------------------------------------------- media query --------------------------- */
+@media (width < 1200px) {
+  .login-container .login,
+  .signUp-container .signUp {
+    width: 35%;
+  }
+
+  .login-container .verifyOTP {
+    width: 40%;
+  }
+}
+
+@media (width < 992px) {
+  .login-container .login,
+  .signUp-container .signUp {
+    width: 40%;
+  }
+
+  .login-container .verifyOTP {
+    width: 50%;
+  }
+}
+
+@media (width < 768px) {
+  .login-container .login,
+  .signUp-container .signUp {
+    width: 60%;
+  }
+
+  .login-container .verifyOTP {
+    width: 70%;
+  }
+}
+
+@media (width < 576px) {
+  .login-container .login,
+  .signUp-container .signUp {
+    width: 80%;
+  }
+
+  .login-container .verifyOTP {
+    width: 98%;
+  }
+
+  .otp-boxes {
+    margin: 0 1rem;
+  }
+}
+
+@media (width < 400px) {
+  .login-container .login,
+  .signUp-container .signUp {
+    width: 95%;
+  }
+  .login-container .verifyOTP {
+    width: 98%;
+  }
+}
+
+@media (width < 250px) {
+  .login-container .otp-boxes {
+    margin: 0 0.2rem;
+    height: 3rem;
+    width: 3rem;
+  }
+}

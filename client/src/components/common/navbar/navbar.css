@@ -1,0 +1,74 @@
+header {
+  border: 1px solid blue;
+  /* position: relative; */
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header nav img {
+  width: 10rem;
+  height: auto;
+}
+
+header nav button {
+  background-color: transparent;
+  font-size: 3rem;
+  cursor: pointer;
+  height: 3.3rem;
+  width: 3.3rem;
+}
+
+header ul {
+  z-index: 1;
+  background-color: #37afe1;
+  padding: 2rem 0;
+  color: #fff;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 5rem;
+  font-size: 1.8rem;
+  overflow: hidden;
+  position: fixed;
+  top: 5rem;
+  right: 10%;
+  transition: all 0.5s linear;
+  -webkit-transition: all 0.5s linear;
+  -moz-transition: all 0.5s linear;
+  -ms-transition: all 0.5s linear;
+  -o-transition: all 0.5s linear;
+}
+
+header ul li {
+  cursor: pointer;
+  /* border: 0.1rem solid red; */
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  column-gap: 1.5rem;
+  transition: all 0.3s linear;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -ms-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+}
+
+header ul li span:nth-child(1) {
+  font-size: 2.5;
+}
+
+header ul li:hover {
+  background-color: #4cc9fe;
+}
+
+header .openTab {
+  width: 30%;
+}
+
+header .closeTab {
+  width: 0%;
+}
